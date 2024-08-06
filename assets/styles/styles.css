@@ -7,14 +7,14 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #ece3f5; /* Set text color */
+    color: #8353a6; /* Set text color */
 }
 
 /* Set background color */
 body {
     background-color: #0b070e;
     color: #ece3f5; /* Set text color */
-    margin-left: 200px; /* Adjust margin to accommodate sidebar width */
+    margin-left: 290px; /* Adjust margin to accommodate sidebar width */
 }
 
 /* The sidebar menu */
@@ -22,8 +22,8 @@ body {
     position: fixed; /* or absolute, depending on your layout */
     top: 0;
     left: 0;
-    width: 200px; /* Adjust width as needed */
-    height: 100%; /* Full height */
+    width: 256px; /* Adjust width as needed */
+    height: 100vh; /* Full height */
     z-index: 1; /* Ensure it's behind other content */
     overflow-y: auto; /* Optional: Add scroll if content overflows */
 }
@@ -33,13 +33,15 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
-    display: block;
+    color: #8353a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* When you mouse over the navigation links, change their color */
 .navbar a:hover {
-    color: #f1f1f1;
+    color: #ece3f5;
 }
 
 /* Style page content */
@@ -54,4 +56,77 @@ body {
 @media screen and (max-height: 450px) {
     .navbar {padding-top: 15px;}
     .navbar a {font-size: 18px;}
+}
+.profile-container {
+    text-align: center;
+}
+.profile-container h1 {
+    margin: 0;
+}
+
+.profile-container h1 + h1 {
+    margin-top: -5px; /* Adjust this value to move closer or further away */
+}
+.profile-picture {
+    display: block;
+    margin: 0 auto;
+}
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-container h1 a {
+    color: #4a2f5e;
+}
+.content {
+    width: 80%; /* Adjust the percentage as needed */
+    max-width: 1024px; /* Ensure it doesn't get too wide on large screens */
+}
+.navbar {
+    padding-top: 70px
+}
+.profile-picture {
+    width: 100px;
+    height: 100px;
+}
+@font-face {
+    font-family: 'DejaVu';
+    src: url('/assets/fonts/DejaVuSansMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('/assets/fonts/DejaVuSansMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('/assets/fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu';
+    src: url('/assets/fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+body {
+    font-family: 'DejaVu', sans-serif;
 }
