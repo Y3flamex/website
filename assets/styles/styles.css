@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'DejaVu';
+    src: url('/assets/fonts/DejaVuSansMono.ttf') format('truetype'),
+         url('/assets/fonts/DejaVuSansMono-Bold.ttf') format('truetype'),
+         url('/assets/fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype'),
+         url('/assets/fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ece3f5; /* Set text color */
+}
+
+/* Set background color */
+body {
+    background-color: #0b070e;
+    color: #ece3f5; /* Set text color */
+    margin-left: 200px; /* Adjust margin to accommodate sidebar width */
+}
+
+/* The sidebar menu */
+.navbar {
+    position: fixed; /* or absolute, depending on your layout */
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    height: 100%; /* Full height */
+    z-index: 1; /* Ensure it's behind other content */
+    overflow-y: auto; /* Optional: Add scroll if content overflows */
+}
+
+/* The navigation menu links */
+.navbar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    position: relative;
+    z-index: 0; /* Ensure main content is below the sidebar */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .navbar {padding-top: 15px;}
+    .navbar a {font-size: 18px;}
+}
