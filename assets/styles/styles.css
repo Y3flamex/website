@@ -138,3 +138,8 @@ hr{
     height:2px;
     background:#8353a6;
 }
+.current-page {
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
+}
