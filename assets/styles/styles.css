@@ -143,3 +143,13 @@ hr{
     color: gray;
     text-decoration: none;
 }
+/* Style for all links */
+a {
+    color: #007bff; /* Replace this with the color used for @y3flamex */
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+/* Optional: Add hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
