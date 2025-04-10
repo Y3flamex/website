@@ -3,7 +3,7 @@
     src: url('../fonts/DejaVuSansMono.ttf') format('truetype'),
          url('../fonts/DejaVuSansMono-Bold.ttf') format('truetype'),
          url('../fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype'),
-         url('..//fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+         url('../fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
 }
 
 h1, h2, h3, h4, h5, h6 {
