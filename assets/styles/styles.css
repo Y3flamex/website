@@ -102,28 +102,28 @@ aside {
 }
 @font-face {
     font-family: 'DejaVu';
-    src: url('../fonts/DejaVuSansMono.ttf') format('truetype');
+    src: url('../../fonts/DejaVuSansMono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DejaVu';
-    src: url('../fonts/DejaVuSansMono-Bold.ttf') format('truetype');
+    src: url('../../fonts/DejaVuSansMono-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DejaVu';
-    src: url('../fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
+    src: url('../../fonts/DejaVuSansMono-Oblique.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'DejaVu';
-    src: url('../fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
+    src: url('../../fonts/DejaVuSansMono-BoldOblique.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
